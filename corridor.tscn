@@ -1,11 +1,12 @@
 [gd_scene format=3 uid="uid://dseueaummvxqb"]
 
-[ext_resource type="Script" uid="uid://1nxhjf0jonbb" path="res://Scripts/corridor.gd" id="1_jm2rx"]
+[ext_resource type="Script" uid="uid://6u6ae7qqc5lh" path="res://corridor_integrate.gd" id="1_t4usd"]
 [ext_resource type="PackedScene" uid="uid://cjxmx46xp7u26" path="res://player.tscn" id="2_t4usd"]
 
 [node name="Corridor" type="Node3D" unique_id=908780354]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -45.793053, -23.85338)
-script = ExtResource("1_jm2rx")
+script = ExtResource("1_t4usd")
+rebuild_map_in_editor = null
 
 [node name="Player" parent="." unique_id=1497853535 instance=ExtResource("2_t4usd")]
 transform = Transform3D(1, 0, 0, 0, 0.99968684, -0.025025407, 0, 0.025025407, 0.99968684, 0, 0, 0)
